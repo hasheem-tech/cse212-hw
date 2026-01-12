@@ -12,9 +12,10 @@ public static class Arrays
 
 
         // Answer: 
-        // 1. I will define an array of size equals to 'length' called 'result'
+        //
+        // 1. I will define an array of size equals to 'length' called 'result' 
         // 2. I will write a loop that iterates from 0 to 'length' - 1 and in each iteration I will
-        //   assign "'number' times i+1" at i index of 'result' array
+        //      assign "'number' times i+1" at i index of 'result' array
         double[] result = new double[length];
         for(int i =0; i < length; i++)
         {
