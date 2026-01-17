@@ -9,7 +9,7 @@ public class PriorityQueueTests
     // Scenario: Create a a queue with values and their priorities: Apple(20), Mango(15), banana(5), 
     // grapes(29), kiwi(2) and run until the queue is empty.
     // Expected Result: grapes, apple, mango, banana, kiwi
-    // Defect(s) Found: Dequeue function wasn't removing the high priority item from the queue
+    // Defect(s) Found: Dequeue function wasn't removing the highest priority item from the queue
     public void TestPriorityBasedDequeue()
     {
         var priorityQueue = new PriorityQueue();
@@ -35,7 +35,7 @@ public class PriorityQueueTests
     // grapes(20), kiwi(20) and run until the queue is empty.
     // Expected Result: apple, mango, banana, grapes, kiwi
     // Defect(s) Found: there was no code for handling values with identical priorities and removing
-    // the one that is more in the front of queue
+    // the one that is the front most
     public void TestIdenticalPriorities()
     {
         var priorityQueue = new PriorityQueue();

@@ -85,7 +85,7 @@ public class TakingTurnsQueueTests
     // Scenario: Create a queue with the following people and turns: Bob (2), Tim (Forever), Sue (3)
     // Run 10 times.
     // Expected Result: Bob, Tim, Sue, Bob, Tim, Sue, Tim, Sue, Tim, Tim
-    // Defect(s) Found: 1. In GetNextPerson when dequeuing, persons with infinite 
+    // Defect(s) Found: 1. In GetNextPerson method when dequeuing, persons with infinite 
     // turns weren't getting added back in queue
     public void TestTakingTurnsQueue_ForeverZero()
     {
