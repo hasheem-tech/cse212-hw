@@ -29,9 +29,18 @@
             if (_queue[index].Priority >= _queue[highPriorityIndex].Priority)
                 highPriorityIndex = index;
         }
-
+        // Find identical priorities and make highprioityIndex to be the index of front most value
+        for (int index = 0; index < _queue.Count - 1; index++)
+        {
+            if (_queue[index].Priority == _queue[highPriorityIndex].Priority)
+            {
+                highPriorityIndex = index;
+                break;
+            }
+        }
         // Remove and return the item with the highest priority
         var value = _queue[highPriorityIndex].Value;
+        _queue.RemoveAt(highPriorityIndex);
         return value;
     }
 
